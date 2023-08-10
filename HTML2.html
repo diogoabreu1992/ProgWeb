@@ -6,15 +6,92 @@
     </head>
     <body>
         <div>
-            <h1>Formulário de Contato</h1>
+            <h1>Formulário de Contato</h1><br>
+
             <div>
                 <fieldset>
                     <legend>Dados Básicos</legend>
-                    <input type="text" name="nome" id="nome_usuario">
-                    <input type="email" name="email" id="email_usuario">
-                    <input type="url" name="site" id="site_usuario">
+<pre>
+Nome:  <input type="text" name="nome" id="nome_usuario">
+Email: <input type="email" name="email" id="email_usuario">
+Site:  <input type="url" name="site" id="site_usuario">
+</pre>
                 </fieldset>
             </div>
+
+            <div>
+                <fieldset>
+                    <legend>Seu curso no Instituto de Computação</legend>
+<pre>
+<input type="radio" name="curso" id="cc"><label for="cc">Ciência da Computação</label>
+<input type="radio" name="curso" id="si"><label for="si">Sistemas de Informação</label>
+<input type="radio" name="curso" id="ec"><label for="ec">Engenharia da Computação</label>
+</pre>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Assinale as linguagens já usadas por você</legend>
+                    <label for="java">Java</label>
+                    <input type="checkbox" name="ling" id="java" value="java">
+                    <label for="c">C</label>
+                    <input type="checkbox" name="ling" id="c" value="c">
+                    <label for="c++">C++</label>
+                    <input type="checkbox" name="ling" id="c++" value="c++">
+                    <label for="pearl">Pearl</label>
+                    <input type="checkbox" name="ling" id="pearl" value="pearl">
+                    <label for="python">Python</label>
+                    <input type="checkbox" name="ling" id="python" value="python">
+                    <label for="javascript">Javascript</label>
+                    <input type="checkbox" name="ling" id="javascript" value="javascript">
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Dados Complementares</legend>
+                    <label for="corfavorita">Cor Favorita</label>
+                    <input type="color" name="cor" id="corfavorita"><br>
+                    <label for="datanascimento">Data de nascimento</label>
+                    <input type="date" name="data" id="datanascimento"><br>
+                    <label for="anoingresso">Ano de entrada no curso do IComp</label>
+                    <input type="number" name="ano" min="1980" max="2023"  value="2020" id="anoingresso"><br>
+                    <label for="notasite">Nota para este site</label>
+                    <input type="range" name="nota" id="notasite">
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Área de atuação</legend>
+                    <select name="area" id="area">
+                        <option value="1">Banco de Dados</option>
+                        <option value="2">Educação a Distância</option>
+                        <option value="3">Engenharia de Software</option>
+                        <option value="4">Otimização</option>
+                        <option value="5">Programação para a Web</option>
+                        <option value="6">Recuperação de Informação</option>
+                        <option value="7">Redes de Computadores</option>
+                    </select>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Submeta seu curriculo vitae</legend>
+                    <input type="file" name="curriculo" id="filecurriculo">
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Escreva sua mensagem</legend>
+                    <textarea name="mensagem" id="msg" cols="50" rows="4">Este é o valor padrão!</textarea>
+                </fieldset>
+            </div>
+
+            <br>
             <button>Resetar Dados</button>
             <button>Enviar Mensagem</button>
         </div>
