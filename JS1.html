@@ -7,9 +7,23 @@
     <title>Instituto de Computação</title>
 </head>
 <body>
-    <div style="display: flex;">
+    <div style="display: flex; justify-content: space-between;">
         <script>
-            for(let i=1; i<11; i++){
+            for(let i=1; i<6; i++){
+                document.write(`<table border="1">`);
+                document.write(`<thead> <tr><th colspan="2">Produtos de ${i}</th></tr> </thead>`);
+                document.write("<body>");
+                for(let j=1; j<11; j++){
+                    document.write(`<tr> <td>${i} + ${j}</td> <td>${i*j}</td> </tr>`);
+                }
+                document.write("</body>");
+                document.write("</table>");
+            }
+        </script>
+    </div>
+    <div style="display: flex;  justify-content:space-between; margin-top: 20px;">
+        <script>
+            for(let i=6; i<11; i++){
                 document.write(`<table border="1">`);
                 document.write(`<thead> <tr><th colspan="2">Produtos de ${i}</th></tr> </thead>`);
                 document.write("<body>");
