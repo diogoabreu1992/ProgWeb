@@ -1,2 +1,5 @@
+Os dois seletores foram identificados corretamente
+Nota: 1.4
+
 span{}
 span.cl1{}

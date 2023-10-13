@@ -1,3 +1,7 @@
+Explicação correta
+Nota: 2.0
+ 
+ 
  ==       vai fazer a comparação sem levar em conta o tipo dos dados, 
           ele faz a conversao dos dados para tentar iguala-los.
           então 8 == '8' vai se igual a true. 
