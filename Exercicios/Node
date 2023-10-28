@@ -1,0 +1,30 @@
+const http = require('http');
+const fs = require('fs');
+const { argv } = require('process');
+
+let caminho;
+
+const server = http.createServer(function(req, res) {
+    res.writeHead(200, { "Content-Type": "text/html;charset=utf-8" });
+
+    argv.forEach((val, index) => {
+        if (index === 2) {
+            caminho = val;
+        }
+    });
+
+    fs.readdir(caminho, (err, files) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.write('<div>');
+            files.forEach(file => {
+                res.write(`<p>${file}</p>`); 
+            });
+            res.write('</div>'); 
+            res.end(); 
+        }
+    });
+});
+
+server.listen(3333);
